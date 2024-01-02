@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/kse0maf.css" />
+    <title>Muhammad Shahzaib Ijaz | About Me</title>  
+  </head>
+
+  <body>
+    <div class="cursor-effect"></div>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/favicon.svg" alt="" />
+    </a>
+
+    <section class="more-about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Muhammad Shahzaib <span>Ijaz </span>.</h2>
+        </div>
+        <div class="more-about-content">
+          <div class="more-about-img">
+            <img src="../assets/img/shahzaib.png" alt="" />
+          </div>
+          <div class="more-about-text">
+            <p
+              >Frontend Web Developer based in Pakistan focused on designing
+              engaging UI, building interactive experiences & bringing products
+              to life through design and technology.</p
+            >
+            <br />
+            <p>
+              I have always supported the idea of a minimalistic and
+              user-focused approach to design and development, which I imbibe
+              when designing and building fully responsive web applications.</p
+            >
+            <br />
+            <p
+              >In my spare time, I love to
+              <a
+                href="https://open.spotify.com/playlist/1mHHegPekht63z4EYH5ugM"
+                target="_blank
+              "
+                >listen to</a
+              >
+              and
+              <a href="https://www.instagram.com/i_riffs/" target="_blank"
+                >play</a
+              >
+              neo-jazz instrumentals on the guitar, do pushups(sometimes), go on
+              long walks.</p
+            >
+
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS/SASS</div>
+              <div class="skill-item">ReactJS</div>
+              <div class="skill-item">NextJS</div>
+              <div class="skill-item">Javascript</div>
+              <div class="skill-item">Typescript</div>
+              <div class="skill-item">TailwindCSS</div>
+              <div class="skill-item">Redux</div>
+              <div class="skill-item">MaterialUI</div>
+              <div class="skill-item">Vite</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Git/Github</div>
+            </div>
+
+            <div class="tabs">
+              <button
+                type="button"
+                class="tab-item active"
+                data-target="#experience"
+                >Experience</button
+              >
+              <button type="button" class="tab-item" data-target="#education"
+                >Education</button
+              >
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content active" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">Jun 2023 - Dec 2023</span>
+                  <h4>Frontend Dev - <span>OmniSoftex ltd. Islamabad</span></h4>
+                  <ul>
+                    <li
+                      >Coded using Typescript, NextJS and TailwindCSS to develop
+                      features for both mobile and desktop platforms.
+                    </li>
+                    <li
+                      >Designed and updated layouts to meet usability and
+                      performance requirements.
+                    </li>
+                    <li
+                      >Worked with product designers, backend developers, and
+                      the whole team to develop the organization’s app UI and
+                      Frontend.
+                    </li>
+                    <li
+                      >Adhered to React and NextJS best practices while building
+                      the company's app.
+                    </li></ul
+                  >
+                </div>
+                <div class="timeline-item">
+                  <span class="date">May 2023 - Aug 2023</span>
+                  <h4>Frontend Intern - <span>Digital Applications</span></h4>
+                  <ul>
+                    <li
+                      >Designed front-end applications, and user interactive
+                      (UI) web pages using web technologies like HTML5, CSS3,
+                      Javascript, and Bootstrap4.
+                    </li>
+                    <li
+                      >Edited HTML/CSS/JavaScript and plugins via
+                      WordPress/WPengine, and fixed bugs with existing Shopify
+                      websites
+                    </li>
+                    <li
+                      >Increased traffic and enhanced page ranking by improving
+                      website structure, performing Search Engine Optimization
+                      (SEO) and Search Engine Marketing (SEM) for local
+                      improvements.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Education -->
+            <div class="tab-content" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">Nov 2021 - Present  </span>
+                  <h4
+                    >Bachelors in Computer Science-
+                    <span>University of Engineering and Technology, Lahore</span></h4
+                  >
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Apr 2019 - Jul 2021 </span>
+                  <h4
+                    >Intermediate in Computer Science-
+                    <span>Superior Group of Colleges, Khanewal SubCampus.</span></h4
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="about-cta">
+              <!-- <a
+                href="https://docs.google.com/document/d/1gLw0XUNzuPU4TjuS1jhJsycVUZyZ-uxE3f_qL_pZ4-o/edit?usp=sharing"
+                class="skills-cta"
+                >My resume</a
+              >
+              <span>—</span> -->
+              <a href="../index.html#contact" class="exp-cta">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+      const tabsContainer = document.querySelector(".tabs"),
+        moreAboutSection = document.querySelector(".more-about");
+
+      ////Select Tabs
+      tabsContainer.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("tab-item") &&
+          !e.target.classList.contains("active")
+        ) {
+          tabsContainer.querySelector(".active").classList.remove("active");
+          e.target.classList.add("active");
+          const target = e.target.getAttribute("data-target");
+          moreAboutSection
+            .querySelector(".tab-content.active")
+            .classList.remove("active");
+          moreAboutSection.querySelector(target).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
